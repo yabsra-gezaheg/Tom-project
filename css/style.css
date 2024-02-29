@@ -1,20 +1,3 @@
-#!/bin/bash
-
-mkdir css JavaScript
-
-touch index.html
-
-cd css
-
-touch style.css
-
-# touch bootstrap.css
-
-# Define the file name
-css_file="style.css"
-
-# Write the HTML content to the file
-cat <<EOF > "$css_file"
 @import url("http://use.fontawesome.com/releases/v6.5.1/css/all.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
 
@@ -65,43 +48,3 @@ html {
                              0 0 150px rgba(18,247,255,0.3);
 }
 
-EOF
-
-cp /e/Programing/documants/bootstrap.css bootstrap.css
-
-cd ../
-
-cd JavaScript
-
-touch script.js
-
-cp /e/Programing/documants/jquery-3.7.1.js jquery-3.7.1.js
-
-cd ../
-
-#!/bin/bash
-
-# Define the file name
-html_file="index.html"
-
-# Write the HTML content to the file
-cat <<EOF > "$html_file"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-    <script src="JavaScript/jquery-3.7.1.js"></script>
-    <script src="JavaScript/script.js"></script>
-</body>
-</html>
-EOF
