@@ -3,18 +3,8 @@ const nav = document.querySelector("#nav");
 
 menu.addEventListener("click", () => {
     nav.classList.toggle("d-none");
-    // if(!nav.classList.contains("d-none") && (!nav.contains(event.target)) {
-    //     nav.classList.add("d-none");
-    // }
 });
 
-// document.addEventListener("click", (event) => {
-//     if (!nav.contains(event.target) || !menu.contains(event.target) || !nav.classList.contains("d-none")) {
-//         nav.classList.add("d-none");
-//     }
-// });
-
-   
 const listItems = document.querySelectorAll('#nav ul li');
 const sections = document.querySelectorAll('.all');
 
